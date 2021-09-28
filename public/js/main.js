@@ -314,9 +314,9 @@
 
     // Dom Ready
     $(function () {
-        ajaxContactForm();
-        ajaxSubscribe.eventLoad();
-        alertBox();
+        // ajaxContactForm();
+        // ajaxSubscribe.eventLoad();
+        // alertBox();
     });
 
 })(jQuery);

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Contact;
 use App\Mail\ContactMail;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
@@ -28,7 +29,8 @@ class FrontController extends Controller
 
     public function postContact(ContactRequest $request)
     {
-        // Mail::to(env('MAIL_FROM_ADDRESS'))->send(new ContactMail($request->validated()));
+        Mail::to(env('MAIL_FROM_ADDRESS'))->send(new ContactMail($request->validated()));
+        // Contact::create($request->validated());
 
         return back()->with([
             'message' => __('master.mail_sended')
