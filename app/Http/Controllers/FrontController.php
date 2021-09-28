@@ -29,8 +29,8 @@ class FrontController extends Controller
 
     public function postContact(ContactRequest $request)
     {
-        Mail::to(env('MAIL_FROM_ADDRESS'))->send(new ContactMail($request->validated()));
-        // Contact::create($request->validated());
+        // Mail::to(env('MAIL_FROM_ADDRESS'))->send(new ContactMail($request->validated()));
+        Contact::create($request->validated());
 
         return back()->with([
             'message' => __('master.mail_sended')
