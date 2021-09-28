@@ -1,0 +1,26 @@
+<?php
+
+return [
+    'title' => "Sobre mim",
+    'know_more' => "Saber mais",
+    'my_story' => "A Minha História",
+    'my_interests' => "Os meus interesses",
+    'interest1' => "<strong>As notícias</strong> : Todas as notícias me interessa, tanto no domínio da informática como em qualquer outro assunto.",
+    'interest2' => "<strong>A música</strong> : Adoro música pop britânica e muitos outros estilos musicais, toco piano, guitarra e baixo. Às vezes, componho as minhas próprias músicas e gravo-as no meu computador.",
+    'work_experience' => "Experiência Profisional",
+    'my_experience' => "A Minha Experiência",
+    'my_schooling' => "Percurso Educativo",
+    'my_education' => "Os Meus Cursos",
+    'personal_experience' => "Experiência Pessoal",
+    'my_projects' => "Os Meus Projectos",
+    'xp1' => "Realização de um website <i>AvantageVIP</i> (from scratch e sem framework) sob a forma de um diretório comercial para promover o comércio de proximidade na cidade de Saint-Cyr-sur-Mer, e estágio <i>Gestão de software e criação de sites na internet</i>.",
+    'xp2' => "Estágio web remunerado para a migração de uma loja <strong>Prestashop 1.5</strong> para <strong>Prestashop 1.6</strong>, ou seja, a integração de um novo tema sensível, bem como a criação e a alteração de módulos Prestashop.",
+    'xp3' => "Período de teste pago para a realização de um pacote em fichas EAC (projeto <i>Arkotheque</i>, Gerenciamento de arquivos) sob <strong>Symfony 2.8</strong> com a integração de um template admin <i>AdminLTE</i> e diferentes bibliotecas Javascript como <strong>Select2</strong>, <strong>Datatable</strong>, etc. (Participação numa formação Symfony2 durante este período)",
+    'xp4' => "Criação de websites e back office com o framework <strong>Laravel 4.2</strong> e <strong>Laravel 5.x</strong>, criação de ferramentas internas e para clientes, envio de campanha de emailing (com <strong>Mailchimp</strong> e uma ferramenta desenvolvida internamente) e integração de emailing, realização de uma aplicação híbrida em <strong>React Native</strong>",
+    'xp5' => "Estudo e análise das necessidades técnicas, redacção das especificações funcionais e técnicas, concepção, receita e produção. Manutenção das aplicações profissionais já existentes: optimização e evolução, pesquisa e análise de erros, realização de cenários de automatização das nossas máquinas, manutenção da máquina automática, pesquisa e análise de incidentes. Criação de uma ferramenta interna de gestão de projectos (<strong>Laravel 6.x</strong>): gestão do tempo dos projectos durante a semana através de um sistema de calendário em que os projectos podiam ser notados. Ferramenta de monitoramento para o cliente <i>Monext</i> (<strong>Laravel 7.x</strong>)",
+    'xp6' => "Realização/Desenvolvimento de websites com ou sem back-office no framework <strong>Cakephp</strong> (v3 e v4); Correções e melhorias de projetos existentes com este framework. Desenvolvimento, correções, e instalações de módulos em projetos de comércio eletrônico com <strong>Prestashop</strong>, nomeadamente na 1.7, mas também um pouco de 1.6. Realização/desenvolvimento de um pacote <strong>Wordpress</strong> para a gestão de SEO do website (integração CRUD)",
+    'perso1' => "<i>Pharmapp</i>, um aplicativo escalável com um banco de dados <strong>MySQL</strong> sobre o gerenciamento e a venda de medicamentos em uma ou mais farmácias. Esta aplicação foi desenvolvida com a tecnologia <strong>Electron</strong>, um ambiente que permite desenvolver aplicações multi-plataforma de desktop com Javascript e o framework <strong>AngularJS 1</Strong>.",
+    'perso2' => "<i>Numisma</i> é um aplicativo <strong>PWA</strong> desenvolvido com <strong>VueJS</strong>, que permite gerenciar sua coleção de moedas e notas. As moedas e as notas são registadas por continente e por país. O usuário conectado poderá adicionar alterações ou remover itens de sua coleção. Além disso, terá a possibilidade de guardar a sua colecção em pastas que poderá modificar à sua vontade.",
+    'perso3' => "Este website foi desenvolvido em <strong>Laravel</strong> para um particular que quer atualizar o website antigo dele. O usuário poderá acessar <i>privilégios</i> registrando-se no site. Dependendo do tipo de conta, ele pode se conectar a um administrador que pode interagir com o banco de dados (CRUD). O website integra um sistema de papel nas contas criadas que podem acessar algumas páginas do admin e outras não.",
+    'perso4' => "Tive a sorte de ter desenvolvido uma aplicação em <strong>React Native</strong> na <i>Win-Win</i> chamada <i>Esicm Appic</i>, uma aplicação para enfermeiros, para que fosse usada o mais próximo possível dos pacientes para obter respostas rápidas sobre patologias ou cuidados pessoais, incluindo protocolos de tratamento, fichas de pacientes e uma caixa de ferramentas para fazer cálculos específicos.",
+];
