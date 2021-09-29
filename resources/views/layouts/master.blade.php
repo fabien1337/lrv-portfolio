@@ -32,14 +32,14 @@
     @yield('stylesheet')
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YT1W8GB8R3"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RF3WP98QGT"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-        gtag('config', 'G-YT1W8GB8R3');
-    </script>
 
+        gtag('config', 'G-RF3WP98QGT');
+    </script>
 </head>
 
 <body class="header-fixed preloading">
