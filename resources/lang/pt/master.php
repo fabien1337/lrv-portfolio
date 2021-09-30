@@ -17,6 +17,7 @@ return [
     'follow_me' => "Siga-me",
     'contact_me' => "Contacte-me",
     'mail_sended' => "O seu e-mail foi enviado! Muito obrigado",
+    'mail_not_sended' => "A sua mensagem não pôde ser enviada ! Tente novamente mais tarde",
     'cookieconsent_msg' => "Usamos cookies para garantir a melhor experiência no nosso website. Por estas razões, podemos compartilhar os dados de uso do nosso website com nossos parceiros de publicidade e análise. Pode escolher se deseja ou não consentir no nosso uso de cookies através das seguintes opções",
     'cookieconsent_allow' => "Aceitar",
     'cookieconsent_deny' => "Recusar",

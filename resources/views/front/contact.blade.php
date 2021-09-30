@@ -40,7 +40,7 @@
                     <h3 class="section-20px-montserrat font-weight-500">{{ __('contact.header2') }}</h3>
                     
                     <div class="form-contact">
-                        <form method="post" id="contactform" class="comment-form" action="{{ route('front.contact.post') }}" accept-charset="utf-8" novalidate="novalidate">
+                        <form method="post" id="contactform" class="comment-form" action="{{ route('front.contact.post') }}" accept-charset="utf-8" {{--novalidate="novalidate"--}}>
                             @csrf
                             <div class="text-wrap clearfix">
                                 <fieldset class="name-wrap">
@@ -60,10 +60,11 @@
                                 <textarea @error('message') class="mb-2" @enderror id="comment-message" name="message" rows="10" tabindex="4" placeholder="{{ __('contact.message') }}" aria-required="true">{{ old('message') }}</textarea>
                                 @error('message')<div class="text-danger font-size-16" style="margin-bottom: 28px">{{ $message }}</span>@enderror
                             </fieldset>
-                            <button type="submit" role="button" class="arrow-btn btn-st style-5">{{ __('contact.submit') }}</button>
+                            <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response">
+                            <button type="submit" id="submitbutton" role="button" class="arrow-btn btn-st style-5">{{ __('contact.submit') }}</button>
 
                             @if (session('message'))
-                                <div class="text-success font-size-16 mt-5">{{ session('message') }}</div>
+                                <div class="text-{{ session('success') ? 'success' : 'danger' }} font-size-16 mt-5">{{ session('message') }}</div>
                             @endif
                         </form>
                     </div>
@@ -85,4 +86,18 @@
 <script src="{{ asset('js/shortcodes.js') }}"></script>
 <script src="{{ asset('js/jquery-validate.js') }}"></script>
 <script src="{{ asset('js/main.js') }}"></script>
+
+<script src="https://www.google.com/recaptcha/api.js?render={{ env('RECAPTCHA_V3_KEY_SITE') }}"></script>
+<script>
+document.getElementById('submitbutton').addEventListener('click', function (e) {
+    e.preventDefault();
+    grecaptcha.ready(function () {
+        grecaptcha.execute('{{ env('RECAPTCHA_V3_KEY_SITE') }}', {action: 'submit'}).then(function (token) {
+            // console.log('token', token);
+            document.getElementById('g-recaptcha-response').value = token;
+            document.getElementById('contactform').submit();
+        });
+    });
+});
+</script>
 @endsection

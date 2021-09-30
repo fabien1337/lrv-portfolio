@@ -29,11 +29,20 @@ class FrontController extends Controller
 
     public function postContact(ContactRequest $request)
     {
-        // Mail::to(env('MAIL_FROM_ADDRESS'))->send(new ContactMail($request->validated()));
-        Contact::create($request->validated());
+        $recaptcha = $this->checkRecaptcha($request->input('g-recaptcha-response'));
+        if ($recaptcha->success) {
+            // Mail::to(env('MAIL_FROM_ADDRESS'))->send(new ContactMail($request->validated()));
+            Contact::create($request->validated());
+
+            return back()->with([
+                'success' => true,
+                'message' => __('master.mail_sended')
+            ]);
+        }
 
         return back()->with([
-            'message' => __('master.mail_sended')
+            'success' => false,
+            'message' => __('master.mail_not_sended')
         ]);
     }
 
