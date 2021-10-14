@@ -19,3 +19,5 @@ Route::get('/about', [FrontController::class, 'about'])->name('front.about');
 Route::get('/contact', [FrontController::class, 'contact'])->name('front.contact');
 Route::post('/contact', [FrontController::class, 'postContact'])->name('front.contact.post');
 Route::get('/locale/{locale}', [FrontController::class, 'locale'])->name('front.locale');
+
+require __DIR__.'/auth.php';
