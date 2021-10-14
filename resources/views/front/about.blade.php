@@ -138,7 +138,7 @@
                     <div class="swiper-wrapper">
                         <x-school-box year="2014 - 2015" title="Faculté des Sciences" description="Licence Pro. Systèmes Informatiques et Logiciels à Marseille" />
                         <x-school-box year="2012 - 2014" title="Faculté des Sciences" description="Licence Générale en Mathématique et Informatique à Marseille" />
-                        <x-school-box year="2010 - 2012" title="Lycée Victor Hugo" description="BTS IG<br>Informatique de Gestion à Marseillee" />
+                        <x-school-box year="2010 - 2012" title="Lycée Victor Hugo" description="BTS IG<br>Informatique de Gestion à Marseille" />
                         <x-school-box year="2009 - 2010" title="Lycée Lumière" description="Obtention du Bac S<br>A La Ciotat" />
                     </div>
                     <div class="swiper-button-next"></div>
