@@ -96,12 +96,24 @@
                                     <li class="menu-item {{ (request()->route()->action)['as'] === 'front.contact' ? 'current-menu-item' : '' }}">
                                         <a href="{{ route('front.contact') }}">{{ __('master.contact') }}</a>
                                     </li>
-                                    <li class="menu-item menu-item-has-children">
-                                        <a href="#"><img src="https://www.countryflags.io/{{ app()->getLocale() === 'en' ? 'gb' : app()->getLocale() }}/flat/24.png"></a>
+                                    <li class="menu-item">
+                                        <a href="#"><img src="{{ asset('images/flags/'.app()->getLocale().'.png') }}"></a>
                                         <ul class="sub-menu">
-                                            <li class="menu-item"><a href="{{ route('front.locale', ['locale' => 'fr']) }}"><img src="https://www.countryflags.io/fr/flat/16.png"> {{ __('master.lang.fr') }}</a></li>
-                                            <li class="menu-item"><a href="{{ route('front.locale', ['locale' => 'en']) }}"><img src="https://www.countryflags.io/gb/flat/16.png"> {{ __('master.lang.gb') }}</a></li>
-                                            <li class="menu-item"><a href="{{ route('front.locale', ['locale' => 'pt']) }}"><img src="https://www.countryflags.io/pt/flat/16.png"> {{ __('master.lang.pt') }}</a></li>
+                                            <li class="menu-item">
+                                                <a href="{{ route('front.locale', ['locale' => 'fr']) }}">
+                                                    <img src="{{ asset('images/flags/fr.png') }}"> {{ __('master.lang.fr') }}
+                                                </a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="{{ route('front.locale', ['locale' => 'en']) }}">
+                                                    <img src="{{ asset('images/flags/en.png') }}"> {{ __('master.lang.gb') }}
+                                                </a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="{{ route('front.locale', ['locale' => 'pt']) }}">
+                                                    <img src="{{ asset('images/flags/pt.png') }}"> {{ __('master.lang.pt') }}
+                                                </a>
+                                            </li>
                                         </ul>
                                     </li>
                                 </ul>
