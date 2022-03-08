@@ -63,6 +63,14 @@
                     <div class="swiper-wrapper">
 
                         <x-experience-box
+                            :year="__('date.month.oct').' 2021 - '.__('date.month.feb').' 2022'"
+                            company="Ilion Technologies"
+                            city="La Ciotat"
+                            :job="__('homepage.dev_web')"
+                            :description="__('about.xp7')"
+                            />
+
+                        <x-experience-box
                             :year="__('date.month.sep').' 2020 - '.__('date.month.may').' 2021'"
                             company="Make it Créative"
                             city="Aubagne"
