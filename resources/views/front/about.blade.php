@@ -63,6 +63,14 @@
                     <div class="swiper-wrapper">
 
                         <x-experience-box
+                            :year="__('date.month.sep').' 2022'"
+                            :company="__('homepage.microentreprise')"
+                            city="La Ciotat"
+                            :job="__('homepage.dev_web_freelance')"
+                            :description="__('about.xp8')"
+                            />
+
+                        <x-experience-box
                             :year="__('date.month.oct').' 2021 - '.__('date.month.feb').' 2022'"
                             company="Ilion Technologies"
                             city="La Ciotat"
@@ -170,7 +178,18 @@
         </div>
         <div class="row mt-5 mb-5">
             <x-personalxp-box
-                delay="0.1s" year="2020" title="Dans Ses Pas"
+                delay="0.1s" year="2023" title="Econolia"
+                :description="__('about.perso6')"
+                url="https://econolia.fr/" />
+
+            <x-personalxp-box
+                delay="0.1s" year="2022" title="Outta Time"
+                :description="__('about.perso5')"
+                url="https://quiz-des-generations.web.app/" />
+        </div>
+        <div class="row mt-5 mb-5">
+            <x-personalxp-box
+                delay="0.4s" year="2020" title="Dans Ses Pas"
                 :description="__('about.perso3')"
                 url="http://danssespas.com/" />
             
@@ -184,7 +203,7 @@
                 :description="__('about.perso4')"
                 url="https://play.google.com/store/apps/details?id=com.appic&hl=ln&gl=US" />
             
-            <x-personalxp-box delay="1.2s" year="2016" title="PharmApp"
+            <x-personalxp-box delay="0.8s" year="2016" title="PharmApp"
                 :description="__('about.perso1')"
                 url="https://github.com/fabien1337/pharmapp" />
         </div>

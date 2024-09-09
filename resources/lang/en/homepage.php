@@ -5,6 +5,8 @@ return [
     'description' => "For several years, I have been working in the web world which fascinates me and which is always in motion. Curious, serious and eager to learn, I am motivated to take on the new challenges of tomorrow.",
     'my_name' => "My name is :name",
     'dev_web' => "Web developer",
+    'dev_web_freelance' => "Web developer freelance",
+    'microentreprise' => "Micro-enterprise",
     'details' => "Since 2016, my experience in agency and business has allowed me to improve my skills and knowledge over the years, especially in the design and realization of websites and applications through different programming languages, such as HTML, CSS, and Javascript for the front part but especially PHP and databases for the back part.",
     'years_xp' => "YEARS<br>EXPERIENCE",
     'anyway' => "By the way",

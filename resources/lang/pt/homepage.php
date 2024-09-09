@@ -5,6 +5,8 @@ return [
     'description' => "Há vários anos que trabalho no mundo da web, que me fascina e que continua em constante movimento. Curioso, sério e desejoso de aprender, estou motivado para enfrentar os novos desafios de amanhã.",
     'my_name' => "Chamo-me :name",
     'dev_web' => "Desenvolvedor web",
+    'dev_web_freelance' => "Desenvolvedor web independente",
+    'microentreprise' => "Microempresa",
     'details' => "Desde 2016, a minha experiência em agências e empresas permitiu-me melhorar as minhas competências e conhecimentos ao longo dos anos, nomeadamente na concepção e realização de sítios web e de aplicações através de diferentes linguagens de programação, como HTML, CSS, e Javascript para a parte front, mas especialmente o PHP e as bases de dados para a parte back.",
     'years_xp' => "ANOS DE<br>EXPERIÊNCIA",
     'anyway' => "Já agora",
